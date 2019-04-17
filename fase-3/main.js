@@ -11,13 +11,13 @@
 
 //Una vez conseguido renombraremos la función ten a writeThis;
 
-function ten(word, times){
+function writeThis(word, times){
     for(let i =1; i <= times; i++){//cambio el menor o igual sino se queda uno menos
         console.log(word);
     }
 };
 
-ten('patata', 10);
-ten('aguacate', 7);
-ten('Pizza', 50);
+writeThis('patata', 10);
+writeThis('aguacate', 7);
+writeThis('Pizza', 50);
 
