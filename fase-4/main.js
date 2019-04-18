@@ -1,19 +1,23 @@
 // 'use strict';
-// // console.log('hola');
+const randomNumber= getRandomNumber(10);//<-- 
+//                                          | 
+//                                          |  
+ function getRandomNumber(max) {       //   |
+   return Math.ceil(Math.random() * max);// |
+ }                          //              |                                
+ console.log(randomNumber);//               |
+///Explicacion: la funcion randomNumber tiene como parámetro max y como argumento 10. ¿donde devuelve su resultado? se llama a la función en una constante que va a guardar su dato cajita.
 
-// Ahora hemos visto que a una función le podemos pasar datos en crudo a través de los parámetros. Además podríamos pasar estos datos si ya los tuviésemos almacenados en constantes e incluso funciones que nos devuelvan datos!!!
+function writeThis(word, times){
+    for(let i =1; i <= times; i++){//cambio el menor o igual sino se queda uno menos
+        console.log(word);
+    }
+}
 
-// Qué locura! Cómo es eso de la funciones? Vamos a rescatar a nuestra querida getRandomNumber() del ejercicio de evaluación intermedia, para quien no se acuerde era algo como:
-
-// function getRandomNumber(max) {
-//   return Math.ceil(Math.random() * max);
-// }
-// Esta función generaba un número aleatorio de 0 al número que le pasemos por parámetro.
-
-// Qué le tendríamos que escribir en nuestra función writeThis para que nos escribiese las palabras que le pasamos un número random de veces de 0 a 10?
-
-// Pista:
-
-// writeThis('patata',?);
-// writeThis('aguacate'?);
-// writeThis('pizza',?);
+writeThis('patata', 10);
+writeThis('aguacate', 7);
+writeThis('Pizza', 50);
+//AHORA ejecuta la llamada con el numero aleatorio generado como argumento del parametro times
+writeThis('patata',randomNumber);
+writeThis('aguacate',randomNumber);
+writeThis('pizza',randomNumber);
